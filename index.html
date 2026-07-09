@@ -47,16 +47,27 @@
             position: absolute;
             top: 461px;
             left: 50%;
-            transform: translateX(-50%);
             width: 1360px;
             height: 347px;
             font-size: 16px;
             line-height: 1.6;
             color: #333333;
+            animation: fadeSlideIn 1s ease-out forwards;
         }
 
         .content-text p {
             margin: 0 0 20px 0;
+        }
+
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translate(-45%, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
         }
     </style>
 </head>
